@@ -1,0 +1,32 @@
+{
+  "name": "eth-todo-list-cn6035",
+  "version": "1.0.0",
+  "description": "Decentralised To-Do List DApp — CN6035 Mobile & Distributed Systems — U2319460",
+  "main": "truffle-config.js",
+  "author": "Vasanthakumar Balamurugan <u2319460@uel.ac.uk>",
+  "license": "MIT",
+  "scripts": {
+    "dev":         "lite-server",
+    "test":        "truffle test",
+    "migrate":     "truffle migrate --reset",
+    "migrate:sep": "truffle migrate --reset --network sepolia",
+    "compile":     "truffle compile",
+    "lint:sol":    "solhint 'contracts/**/*.sol'",
+    "lint:js":     "eslint src/js/app.js",
+    "lint":        "npm run lint:sol && npm run lint:js",
+    "clean":       "rm -rf build/"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "bootstrap":                  "5.3.2",
+    "bootstrap-icons":            "^1.11.3",
+    "chai":                       "^4.3.10",
+    "chai-as-promised":           "^7.1.1",
+    "dotenv":                     "^16.3.1",
+    "eslint":                     "^8.57.0",
+    "lite-server":                "^2.6.1",
+    "solhint":                    "^4.5.4",
+    "truffle":                    "^5.11.5",
+    "web3":                       "^1.10.4"
+  }
+}
